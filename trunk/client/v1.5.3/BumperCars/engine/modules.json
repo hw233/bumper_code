@@ -1,0 +1,244 @@
+[
+  {
+    "name": "Core",
+    "locked": true,
+    "entries": []
+  },
+  {
+    "name": "Canvas",
+    "locked": true,
+    "entries": [
+      "./cocos2d/core/components/CCCanvas.js"
+    ]
+  },
+  {
+    "name": "Sprite",
+    "locked": true,
+    "entries": [
+      "./cocos2d/core/components/CCSprite.js"
+    ]
+  },
+  {
+    "name": "Label",
+    "entries": [
+      "./cocos2d/core/components/CCLabel.js"
+    ]
+  },
+  {
+    "name": "Mask",
+    "entries": [
+      "./cocos2d/core/components/CCMask.js"
+    ]
+  },
+  {
+    "name": "CCSpriteDistortion",
+    "entries": [
+      "./cocos2d/core/components/CCSpriteDistortion.js"
+    ]
+  },
+  {
+    "name": "LabelOutline",
+    "entries": [
+      "./cocos2d/core/components/CCLabelOutline.js"
+    ]
+  },
+  {
+    "name": "ParticleSystem",
+    "entries": [
+      "./cocos2d/particle/CCParticleSystem.js",
+      "./cocos2d/particle/CCParticleAsset.js"
+    ]
+  },
+  {
+    "name": "TiledMap",
+    "entries": [
+      "./cocos2d/tilemap/CCTiledMap.js",
+      "./cocos2d/tilemap/CCTiledMapAsset.js"
+    ]
+  },
+  {
+    "name": "Spine Skeleton",
+    "entries": [
+      "./extensions/spine/index.js",
+      "./jsb/jsb-spine.js"
+    ]
+  },
+  {
+    "name": "Widget",
+    "entries": [
+      "./cocos2d/core/components/CCWidget.js"
+    ]
+  },
+  {
+    "name": "Button",
+    "entries": [
+      "./cocos2d/core/components/CCButton.js"
+    ]
+  },
+  {
+    "name": "ProgressBar",
+    "entries": [
+      "./cocos2d/core/components/CCProgressBar.js"
+    ]
+  },
+  {
+    "name": "ScrollBar",
+    "entries": [
+      "./cocos2d/core/components/CCScrollBar.js"
+    ]
+  },
+  {
+    "name": "ScrollView",
+    "entries": [
+      "./cocos2d/core/components/CCScrollView.js"
+    ],
+    "dependencies": ["Layout"]
+  },
+  {
+    "name": "Toggle",
+    "entries": [
+      "./cocos2d/core/components/CCToggle.js",
+      "./cocos2d/core/components/CCToggleGroup.js",
+      "./cocos2d/core/components/CCToggleContainer.js"
+    ]
+  },
+  {
+    "name": "PageView",
+    "entries": [
+      "./cocos2d/core/components/CCPageView.js"
+    ]
+  },
+  {
+    "name": "PageViewIndicator",
+    "entries": [
+      "./cocos2d/core/components/CCPageViewIndicator.js"
+    ]
+  },
+  {
+    "name": "Slider",
+    "entries": [
+      "./cocos2d/core/components/CCSlider.js"
+    ]
+  },
+  {
+    "name": "Layout",
+    "entries": [
+      "./cocos2d/core/components/CCLayout.js"
+    ]
+  },
+  {
+    "name": "EditorBox",
+    "entries": [
+      "./cocos2d/core/components/CCEditBox.js",
+      "./jsb/jsb-editbox.js"
+    ]
+  },
+  {
+    "name": "VideoPlayer",
+    "entries": [
+      "./cocos2d/core/components/CCVideoPlayer.js",
+      "./jsb/jsb-videoplayer.js"
+    ]
+  },
+  {
+    "name": "WebView",
+    "entries": [
+      "./cocos2d/core/components/CCWebView.js",
+      "./jsb/jsb-webview.js"
+    ]
+  },
+  {
+    "name": "RichText",
+    "entries": [
+      "./cocos2d/core/components/CCRichText.js"
+    ]
+  },
+  {
+    "name": "AudioSource",
+    "entries": [
+      "./cocos2d/core/components/CCAudioSource.js",
+      "./jsb/jsb-audio.js"
+    ]
+  },
+  {
+    "name": "Animation",
+    "entries": [
+      "./cocos2d/core/components/CCAnimation.js",
+      "./cocos2d/animation/index.js"
+    ]
+  },
+  {
+    "name": "MotionStreak",
+    "entries": [
+      "./cocos2d/motion-streak/CCMotionStreak.js"
+    ]
+  },
+  {
+    "name": "Collider",
+    "entries": [
+      "./cocos2d/core/collider/index.js"
+    ]
+  },
+  {
+    "name": "Action",
+    "entries": [
+      "./cocos2d/actions/index.js"
+    ]
+  },
+  {
+    "name": "Audio",
+    "entries": [
+      "./cocos2d/audio/CCAudioEngine.js"
+    ]
+  },
+  {
+    "name": "Graphics",
+    "entries": [
+      "./cocos2d/core/graphics/index.js"
+    ]
+  },
+  {
+    "name": "DragonBones",
+    "entries": [
+      "./extensions/dragonbones/index.js",
+      "./jsb/jsb-dragonbones.js"
+    ]
+  },
+  {
+    "name": "Physics",
+    "entries": [
+      "./cocos2d/core/physics/index.js",
+      "./jsb/jsb-box2d.js"
+    ],
+    "dependencies": ["Collider"]
+  },
+  {
+    "name": "StudioComponent",
+    "entries": [
+      "./cocos2d/core/components/CCStudioComponent.js"
+    ]
+  },
+  {
+    "name": "RenderTexture",
+    "entries": [
+      "./cocos2d/render-texture/CCRenderTexture.js",
+      "./cocos2d/render-texture/CCRenderTextureCanvasRenderCmd.js",
+      "./cocos2d/render-texture/CCRenderTextureWebGLRenderCmd.js"
+    ]
+  },
+  {
+    "name": "Camera",
+    "entries": [
+      "./cocos2d/core/camera/CCCamera.js"
+    ]
+  },
+  {
+    "name": "Intersection",
+    "entries": [
+      "./cocos2d/core/collider/CCIntersection.js"
+    ]
+  },
+  {
+    "name": "Native NetWork"
+  }
+]

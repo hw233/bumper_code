@@ -1,0 +1,30 @@
+{
+  "ver": "2.0.0",
+  "uuid": "8c106398-4fbd-4fc9-a6c1-1b6060542519",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "Game_WatchRelive2": {
+      "ver": "1.0.3",
+      "uuid": "411e007c-1d52-403b-be1d-540c658e6e98",
+      "rawTextureUuid": "8c106398-4fbd-4fc9-a6c1-1b6060542519",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 201,
+      "height": 23,
+      "rawWidth": 201,
+      "rawHeight": 23,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

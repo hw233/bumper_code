@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "VSAnim",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.4,
+  "sample": 40,
+  "speed": 1,
+  "wrapMode": "2",
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "096e03e7-9199-4810-a9ea-1acbb0b2b465"
+            }
+          },
+          {
+            "frame": 0.125,
+            "value": {
+              "__uuid__": "f425e3f8-eb82-4b77-8e0d-6edf54690fd2"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "a7c6f0c3-859c-4f96-ab46-72a11aaec684"
+            }
+          },
+          {
+            "frame": 0.375,
+            "value": {
+              "__uuid__": "0e622ad2-721e-4566-8bdb-7de41c1f6f56"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

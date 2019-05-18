@@ -1,0 +1,12 @@
+[
+    {"game_id":"101","name":"乱斗求生","path":"?channel=koudai-luandou001&ald_media_id=5296&ald_link_key=763f38cc4aa7377f&ald_position_id=0","app_id":"wxa478097844af317e","img_url":"http://gather.51weiwan.com/uploads/file/20190109/fdcc1a8eada13f80bc00ae577f14e58d.png"},
+    {"game_id":"102","name":"俄罗斯快乐消","path":"?path={'cid':'21018','channel':'1'}","app_id":"wxee4f60dd4b76e9d6","img_url":"http://gather.51weiwan.com/uploads/file/20190109/9320f21ec6a395f01f20c7498a7b9a89.png"},
+    {"game_id":"103","name":"滚蛋吧负能量","path":"?chid=01702&subchid=017kdtf","app_id":"wx43f3221bb0507631","img_url":"http://gather.51weiwan.com/uploads/file/20190107/381e0ddf6612da0b06101586ba5c9db4.png"},
+    {"game_id":"104","name":"甜甜庄园","path":"?ald_media_id=4553&ald_link_key=1ea3a3b1c409ae7a&ald_position_id=0","app_id":"wx3a09d7053a097dfd","img_url":"http://gather.51weiwan.com/uploads/file/20190103/c3c5c7e2bc707a005f1efdec908edce1.png"},
+    {"game_id":"105","name":"怼怼三国","path":"pages/index/index?channel=11899","app_id":"wxdba811af3ac0f3b5","img_url":"http://gather.51weiwan.com/uploads/file/20190103/d89cda4403ee26578e3605f0972b1ac0.jpg"},
+    {"game_id":"106","name":"捕鱼大奖赛","path":"pages/index/index?cpsId=599","app_id":"wx3efb95b9c5579418","img_url":"http://gather.51weiwan.com/uploads/file/20190103/f8eaee43f05face48a5fca58b0b00ec9.png"},
+    {"game_id":"107","name":"几何大逃亡","path":"pages/index/index?channel=wxaaaaaaaaaaaa2141","app_id":"wx42d64997b0fe3c99","img_url":"http://gather.51weiwan.com/uploads/file/20190103/90992f643e968228234c669ec6600654.png"},
+    {"game_id":"108","name":"修罗武神","path":"index.html?channel=hai020","app_id":"wx88bbae21474301ed","img_url":"http://gather.51weiwan.com/uploads/file/20190103/434c012a52c4a69e7c677a156031e6ca.jpg"},
+    {"game_id":"109","name":"蹦蹦球球","path":"?id=wx5971eddcb9b377eb","app_id":"wxc3c0152eca431de6","img_url":"http://gather.51weiwan.com/uploads/file/20190103/d1d7cfa7b609b070bc4423400afcb705.png"},
+    {"game_id":"110","name":"封神来了","path":"pages/index/index?from=wxcps&tag=md15v-8wpq","app_id":"wxd101b6b8f64db085","img_url":"http://gather.51weiwan.com/uploads/file/20190107/01069147a7c0bf1b24a7468c7605b46d.png"}
+]

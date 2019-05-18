@@ -1,0 +1,13 @@
+[
+    {"ID":"100010","name":"小精灵","Money":"","ImgID":"1","ConditionID":"0","ConditionState":"1","Remarks":"默认初始车","speed":"0","power":"0"},
+    {"ID":"100020","name":"皮皮猪","Money":"","ImgID":"2","ConditionID":"1","ConditionState":"0","Remarks":"好友获赠","speed":"10","power":"0"},
+    {"ID":"100030","name":"大黄蜂","Money":"","ImgID":"3","ConditionID":"2","ConditionState":"0","Remarks":"永恒钻石5","speed":"20","power":"0"},
+    {"ID":"100040","name":"灵魂猎手","Money":"50000","ImgID":"4","ConditionID":"3","ConditionState":"0","Remarks":"","speed":"14","power":"4"},
+    {"ID":"100050","name":"黑白PD","Money":"1000","ImgID":"5","ConditionID":"3","ConditionState":"0","Remarks":"","speed":"10","power":"0"},
+    {"ID":"100060","name":"邪鬼媚眼","Money":"5000","ImgID":"6","ConditionID":"3","ConditionState":"0","Remarks":"","speed":"15","power":"0"},
+    {"ID":"100070","name":"粉红小兔","Money":"30000","ImgID":"7","ConditionID":"3","ConditionState":"0","Remarks":"","speed":"20","power":"0"},
+    {"ID":"100080","name":"小黄鸭","Money":"","ImgID":"8","ConditionID":"4","ConditionState":"0","Remarks":"看视频解锁","speed":"5","power":"0"},
+    {"ID":"100090","name":"烈焰恶魔","Money":"60000","ImgID":"9","ConditionID":"3","ConditionState":"0","Remarks":"","speed":"14","power":"5"},
+    {"ID":"100100","name":"旺财007","Money":"70000","ImgID":"10","ConditionID":"3","ConditionState":"0","Remarks":"","speed":"11","power":"7"},
+    {"ID":"100110","name":"呆呆橘","Money":"80000","ImgID":"11","ConditionID":"3","ConditionState":"","Remarks":"","speed":"14","power":"7"}
+]

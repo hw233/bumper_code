@@ -1,0 +1,44 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "taotaiAnim",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 3.05,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "x": [
+        {
+          "frame": 0,
+          "value": -720,
+          "curve": "linear"
+        },
+        {
+          "frame": 0.5833333333333334,
+          "value": 0
+        },
+        {
+          "frame": 0.5833333333333334,
+          "value": 0
+        },
+        {
+          "frame": 2.5,
+          "value": 0,
+          "curve": [
+            0.22,
+            0.81,
+            0.59,
+            0.89
+          ]
+        },
+        {
+          "frame": 3.05,
+          "value": 720
+        }
+      ]
+    }
+  },
+  "events": []
+}

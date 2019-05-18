@@ -1,0 +1,13 @@
+[
+    {"TaskID":"1000001","TaskDes":"添加到微信小程序","TaksConID":"0","TaskTarget":"1","TaskMode":"0","RewardType":"130010","RewardNum":"10000","SkipView":"25","SkipParam":"0"},
+    {"TaskID":"2000001","TaskDes":"每日签到","TaksConID":"1","TaskTarget":"1","TaskMode":"0","RewardType":"130010","RewardNum":"200","SkipView":"10","SkipParam":"0"},
+    {"TaskID":"2000002","TaskDes":"完成3次试玩任务","TaksConID":"2","TaskTarget":"3","TaskMode":"0","RewardType":"130010","RewardNum":"2000","SkipView":"11","SkipParam":"3"},
+    {"TaskID":"2000003","TaskDes":"完成10次击杀","TaksConID":"3","TaskTarget":"10","TaskMode":"1,1,1","RewardType":"130010","RewardNum":"200","SkipView":"0","SkipParam":"0"},
+    {"TaskID":"2000004","TaskDes":"完成1次双杀","TaksConID":"4","TaskTarget":"1","TaskMode":"1,1,1","RewardType":"130010","RewardNum":"200","SkipView":"0","SkipParam":"0"},
+    {"TaskID":"2000005","TaskDes":"完成1次三杀","TaksConID":"5","TaskTarget":"1","TaskMode":"1,1,1","RewardType":"130010","RewardNum":"500","SkipView":"0","SkipParam":"0"},
+    {"TaskID":"2000006","TaskDes":"完成1次大乱斗","TaksConID":"8","TaskTarget":"1","TaskMode":"0,1,0","RewardType":"130010","RewardNum":"100","SkipView":"2","SkipParam":"1"},
+    {"TaskID":"2000007","TaskDes":"完成3次大乱斗","TaksConID":"8","TaskTarget":"3","TaskMode":"0,1,0","RewardType":"130010,140010","RewardNum":"500,2","SkipView":"2","SkipParam":"1"},
+    {"TaskID":"2000008","TaskDes":"完成1次组队战","TaksConID":"8","TaskTarget":"1","TaskMode":"0,0,1","RewardType":"130010","RewardNum":"100","SkipView":"2","SkipParam":"2"},
+    {"TaskID":"2000009","TaskDes":"完成3次组队战","TaksConID":"8","TaskTarget":"3","TaskMode":"0,0,1","RewardType":"130010,140010","RewardNum":"500,2","SkipView":"2","SkipParam":"2"},
+    {"TaskID":"2000010","TaskDes":"获得1次大乱斗排名第1","TaksConID":"9","TaskTarget":"1","TaskMode":"0,1,0","RewardType":"130010,140010","RewardNum":"500,3","SkipView":"2","SkipParam":"1"}
+]

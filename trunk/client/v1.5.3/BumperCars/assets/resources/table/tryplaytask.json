@@ -1,0 +1,12 @@
+[
+    {"TaskID":"3000001","GameID":"101","RewardType":"130010,140010","RewardNum":"1000,2"},
+    {"TaskID":"3000002","GameID":"102","RewardType":"130010,140010","RewardNum":"1000,2"},
+    {"TaskID":"3000003","GameID":"103","RewardType":"130010,140010","RewardNum":"1000,2"},
+    {"TaskID":"3000004","GameID":"104","RewardType":"130010,140010","RewardNum":"1000,2"},
+    {"TaskID":"3000005","GameID":"105","RewardType":"130010,140010","RewardNum":"1000,2"},
+    {"TaskID":"3000006","GameID":"106","RewardType":"130010,140010","RewardNum":"1000,2"},
+    {"TaskID":"3000007","GameID":"107","RewardType":"130010,140010","RewardNum":"1000,2"},
+    {"TaskID":"3000008","GameID":"108","RewardType":"130010,140010","RewardNum":"1000,2"},
+    {"TaskID":"3000009","GameID":"109","RewardType":"130010,140010","RewardNum":"1000,2"},
+    {"TaskID":"3000010","GameID":"110","RewardType":"130010,140010","RewardNum":"1000,2"} 
+]

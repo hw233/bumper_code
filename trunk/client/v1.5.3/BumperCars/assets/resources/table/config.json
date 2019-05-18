@@ -1,0 +1,19 @@
+{
+	"relive_switch": 1,
+	"time_limit_switch": 1,
+	"relive_advertise_switch": 0,
+	"homepage_gametime": 10,
+	"come_gift_gold_num": 500,
+	"come_star_star_num": 1,
+	"keep_star_count": 5,
+	"jxjl_probability": 70,
+	"popup_duration": 0.1,
+	"camera_init_ratio": 1,
+	"camera_min_ratio": 0.6,
+	"recommend_games": "91, 91, 91",
+	"online_reward": 
+	{
+		"type": "130010,140010",
+		"num": "100,100"
+	}
+}
