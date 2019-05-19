@@ -1,0 +1,235 @@
+//////////////////////////////////////////////////// Common Protocol ////////////////////////////////////////////////////
+// Common Heart Beat
+{
+	"nowTime"		:	0 // Now Time
+}
+
+// Common Server Reg
+{
+	"serverRegType"	:	0, // from enum ServerType
+	"serverRegID"	:	0  // Server Reg ID
+}
+
+// Common Server Reg Resp
+{
+	"regSuccess"	:	false 
+}
+
+//add by huyf 2018.08.33:从客户端发送日志信息到服务器GameServer
+// Common Client Log req
+//command: 10002 ,从客户端发送日志信息到服务器GameServer
+//C2Server_LOG
+{
+"robotid":"",
+"uid":,
+"uName":"", 注释：玩家账号字符串
+"log":"" 注释: 内容包含时间和日志内容  
+}
+//add end:从客户端发送日志信息到服务器GameServer
+
+
+//登录，此接口在前端授权后，需要在调用一次api/control/login.php的index获取uid--------------OK
+//MSG_LOGIN C->S S->C
+{
+	uid string 用户id
+	headpicurl: string 头像
+	nickname:string 昵称
+	result: 成功：1 失败：0
+}
+
+//角色信息--------------OK
+//MSG_USERINFO C->S S->C
+{
+	uid string 用户id
+	headpicurl: string 头像
+	nickname:string 昵称
+	gold_sum:金币数量
+	kill_sum:击杀数量
+	granding_id:段位id
+	star_sum:当前星星数量
+	unlock_cars:已解锁车辆
+	use_car:当前使用中的车辆
+	king_sum : int 霸主令牌数量
+	day_gift_sum: int 当天获取礼包的次数
+	day_star_sun: int 当天保留星星的次数
+	result: 成功：1 失败：0
+}
+
+//创建房间--------------OK
+//MSG_BATTLE C->S S->C
+{
+	action: create_room emun
+	room_id:房间id，用于分享邀请加入回传给服务器
+	data : 0 int
+	param[n]: user_id string  传递user_id给服务器
+	{
+		uid string 用户id
+		headpicurl: string 头像
+		nickname:string 昵称
+	}
+	result: 成功：1 失败：0
+}
+
+//分享邀请角色加入--------------OK
+//MSG_BATTLE C->S S->C
+{
+	action: invite_join emun
+	room_id:房间id，用于分享邀请加入回传给服务器
+	data : 0 int 预留位 （error:1:房间已经满人，2：房间已经不存在）
+	//param : user_id string 传递user_id给服务器
+	result: 成功：1 失败：0
+}
+
+//快速加入--------------OK
+//MSG_BATTLE C->S S->C
+{
+	action: quick_join emun	
+	//data : 0 int 预留位 （error:1:房间已经满人，2：房间已经不存在）
+	//param : user_id string 传递user_id给服务器
+	result: 成功：1 失败：0
+}
+
+//同步房间信息包--------------OK
+//MSG_SYN_ROOMINFO C->S S->C
+{
+	roominfo[n]: user_id string  传递user_id给服务器
+	{
+		uid : string 用户id
+		headpicurl : string 头像
+		nickname : string 昵称
+		use_car : 用户当前使用的id
+		fight_lev : 初始战斗等级
+		fight_score : 初始战斗积分
+	}
+	result: 成功：1 失败：0
+}
+
+//快速匹配--------------OK
+//MSG_BATTLE C->S S->C
+{
+	action: quick_match emun
+	data : 0 int 预留位
+	param : user_id string 传递user_id给服务器
+	result: 成功：1 失败：0
+}
+
+//战斗开始--------------OK
+//MSG_BATTLE S->C
+{
+	action: battle_begin emun
+	data : 0 int 预留位
+	param : user_id string 传递user_id给服务器
+	result: 成功：1 失败：0
+}
+
+//碰撞
+//MSG_BATTLE C->S S->C
+{
+	action: battle_collide emun
+	target_id : 被撞击者id
+	velocity : 反弹速度
+	angle : 角度
+	timestamp : utc时间戳
+	result: 成功：1 失败：0
+}
+
+//碰撞包-2--------------OK
+//MSG_BATTLE C->S S->C
+{
+	action: battle_collide emun
+	target_id : 目标玩家id
+	power : float 冲量
+	result: 成功：1 失败：0
+}
+
+//战斗结束
+//MSG_BATTLE S->C--------------OK
+{
+	action: battle_end emun
+	data : 0 排行榜数据
+	param : 
+}
+
+//商城购买物品--------------OK
+//MSG_VAS C->S S->C
+{
+	action: buy emun
+	item_id : int 道具的id
+	item_type : 110110 int 物品itmetype
+	item_count : 1 int 数量
+}
+
+//积分同步包--------------OK
+//_MSG_BATTLE S->C
+{
+	action: syn_score emun
+	data : 100 int 当前总积分数（score）
+	param : target_id string 目标玩家target_id
+}
+
+//获取生产道具pox--------------OK
+//MSG_ITEM S->C
+{
+	action: _ITEM_ACTION_CREATE_RANDOM_ITEM_POS emun
+	id : 道具世界唯一id
+	data : itemtype int 物品itmetype 110111
+	point_x:x坐标(像素)
+	point_y:y坐标(像素)
+}
+//生产道具--------------OK
+//MSG_ITEM S->C
+{
+	action: create_item emun
+	id : 道具世界唯一id
+	data : itemtype int 物品itmetype 110111
+	point_x:x坐标(像素)
+	point_y:y坐标(像素)
+}
+
+//删除道具--------------OK
+//MSG_ITEM C->S S->C
+{
+	action: pick_item emun
+	id : 道具世界唯一id
+	result: 成功：1 失败：0
+}
+
+//击杀包
+//_MSG_BATTLE C->S S->C--------------OK
+{
+	action: dead emun
+	killer_id : 玩家killer_id
+	point_x : 死亡坐标像素x
+	point_y : 死亡坐标像素y
+}
+
+//复活包--------------OK
+//MSG_ACTION C->S S->C
+{
+	action : relive emun
+	reliver_id : 复活者reliver_id
+	type : 复活类型 0 : 不看视频 1 : 看视频
+	point_x : 复活坐标像素x
+	point_y : 复活坐标像素y
+}
+
+//奖励兑换包--------------三期
+//MSG_EXCHANGE C->S S->C
+{
+	action: exchange_item emun
+	data : 1101100 int 物品itmetype
+	param : 空
+	result: 成功：1 失败：0
+}
+
+//位置同步包---------------OK
+//MSG_WALK C->S S->C
+{
+	user_id : 玩家id
+	point_x : 车坐标像素x
+	point_y : 车坐标像素y
+	point_start_x : 用户操作起始点坐标像素x
+	point_start_y : 用户操作起始点坐标像素y
+	point_end_x : 用户操作起终点坐标像素x
+	point_end_y : 用户操作起终点坐标像素y
+}

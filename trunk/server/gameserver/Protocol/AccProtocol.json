@@ -1,0 +1,135 @@
+//////////////////////////////////////////////////// Account ////////////////////////////////////////////////////
+// 注册账号
+// ACC_ADDUSER_REQ
+// AccAddUserReq
+{
+    "seq"       :   "", // 选填,应答时返回该字段,内容保持不变
+    "appid"     :   "", // 选填,用于权限控制
+    "uname"     :   "",
+    "passwd"    :   ""
+}
+
+// ACC_ADDUSER_RESP
+// AccAddUserResp
+{ 
+    "seq"       :   "",
+    "result"    :   0,
+    "msg"       :   "",
+    "uid"       :   0,
+    "uname"     :   ""
+}
+
+
+// 校验账号
+// ACC_CHECKUSER_REQ
+// AccCheckUserReq
+{
+    "seq"       :   "", // 选填,应答时返回该字段,内容保持不变
+    "appid"     :   "", // 必填,用于权限控制
+    "uname"     :   "",
+    "passwd"  :   ""
+}
+
+// ACC_CHECKUSER_RESP
+// AccCheckUserResp
+{ 
+    "seq"               :   "",
+    "result"            :   0,  // 0为成功,其它失败
+    "msg"               :   "",
+    "uid"               :   0,
+    "uname"             :   "",
+    "gameServerAddr"    :   ""
+}
+
+// ACC_LOGIN_REQ
+// AccLoginReq
+{
+    "seq"       :   "", // 选填,应答时返回该字段,内容保持不变
+    "appid"     :   "", // 必填,用于权限控制
+    "uname"     :   "",
+    "passwd"  :   "",
+    "keytp"     :   ""  // 选填，第三方登录时填写
+}
+
+// ACC_LOGIN_RESP
+// AccLoginResp
+{
+    "seq"               :   "",
+    "result"            :   0, // 0为成功,其它失败
+    "msg"               :   "",
+    "uid"               :   0,
+    "uname"             :   "",
+    "gameServerAddr"    :   "",
+    "token"             :   ""
+}
+
+// ACC_LOGOUT_REQ
+// AccLogoutReq
+{ 
+    "seq"       :   "", // 选填,应答时返回该字段,内容保持不变
+    "appid"     :   "", // 必填,用于权限控制
+    "uid"       :   0
+}
+
+// ACC_LOGOUT_RESP
+// AccLogoutResp
+{ 
+    "seq"       :   "",
+    "result"    :   0, // 0为成功,其它失败
+    "msg"       :   "",
+    "uid"       :   0
+}
+
+// ACC_KICKOFF_REQ
+// AccKickoffReq
+{
+    "seq"       :   "", // 选填,应答时返回该字段,内容保持不变
+    "uid"       :   0
+}
+
+// ACC_KICKOFF_RESP
+// AccKickoffResp
+{ 
+    "seq"       :   "",
+    "result"    :   0,  // 0为成功,其它失败
+    "msg"       :   "",
+    "uid"       :   0
+}
+
+// ACC_CHECKTOKEN_REQ
+// AccCheckTokenReq
+{
+    "seq"       :   "", // 选填,应答时返回该字段,内容保持不变
+    "appid"     :   "", // 必填,用于权限控制
+    "token"     :   ""
+}
+
+// ACC_CHECKTOKEN_RESP
+// AccCheckTokenResp
+{
+    "seq"           :   "",
+    "result"        :   0,  // 0为成功,其它失败
+    "msg"           :   "",
+    "token"         :   "",
+    "uid"           :   0,  // 用户id
+    "uname"         :   "", // 用户名
+    "status"        :   0,  // 0表示离线，1表示在线
+    "createTime"    :   0   // 该Token的创建时间
+}
+
+// ACC_CHECKUNAME_REQ
+// AccCheckUnameReq
+{   
+    "seq"       :   "", // 选填,应答时返回该字段,内容保持不变
+    "appid"     :   "", // 必填,用于权限控制
+    "uname"     :   ""
+}
+
+// ACC_CHECKUNAME_RESP
+// AccCheckUnameResp
+{
+    "seq"       :   "",
+    "result"    :   0,  // 0为成功,其它失败
+    "msg"       :   "",
+    "uname"     :   ""
+}

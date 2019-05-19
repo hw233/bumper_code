@@ -1,0 +1,29 @@
+//////////////////////////////////////////////////////////////////////
+//文件名称：CLimitTimeAwardCfg.cpp
+//功能描述：
+//版本说明：CLimitTimeAwardCfg API
+//			
+//编写作者：2018.12.13 yanfeng.hu
+//
+//修改情况：完成基本功能搭建 V1.0.0
+//
+//////////////////////////////////////////////////////////////////////
+#include "LimitTimeAwardCfg.h"
+#include "../../DataBase/DBMySql.h"
+#include "../I_mydb.h"
+#include "../Player.h"
+
+
+//////////////////////////////////////////////////////////////////////
+//常量预定于
+//////////////////////////////////////////////////////////////////////
+//构造
+CLimitTimeAwardCfg::CLimitTimeAwardCfg()
+{
+    memset(&m_LimitTimeAwardCfgInfo, 0, sizeof(m_LimitTimeAwardCfgInfo));
+}
+
+//析构函数
+CLimitTimeAwardCfg::~CLimitTimeAwardCfg()
+{ 	
+}

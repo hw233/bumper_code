@@ -1,0 +1,156 @@
+//////////////////////////////////////////////////// Client and GameServer ////////////////////////////////////////////////////
+// Client to GameServer
+// C2GSLogin
+{
+	"accountID"	:	0,
+	"token"		:	""
+}
+
+// C2GSLogout
+{
+	"accountID"	:	0
+}
+
+// C2GSKickOff Resp
+{
+	"result"		:	0, // 0 - success, -1 - failed
+	"accountID"		:	0,
+	"seq"			:	""
+}
+
+// C2GSCreateRobot
+{
+	"accountID"	:	 0,
+	"robotType"	:	 0		// exmaple : 1 - Nico 2 - Amy 3 - other
+}
+
+// C2GSRobotOnline
+{
+	"accountID"		:	0,
+	"robotID"		:	""
+}
+
+// GameServer to Client
+// GS2CLogin
+{
+	"result"	:	 0,	// if success return 0 else return error code
+	"robotFlag"	:	 0,	// 是否已经创建了机器人 0 - no robot, 1 - have robot
+	"robotList"	:		// 如果已经创建了机器人返回所有机器人的信息	 
+	[
+		{
+			"robotID"			:	"",
+			"robotType"			:	0	// 机器人原型ID
+		},
+		{
+			"robotID"			:	"",
+			"robotType"			:	0	// 机器人原型ID
+		},
+		// ...
+	]
+}
+
+// GS2CLogout
+{
+	"result"	:	0
+}
+
+// GS2CKickOff Req
+{
+	"accountID"	:	0,
+	"seq"		:	""
+}
+
+// GS2CCreateRobot
+{
+	"result"		:	0,	// if success return 0 else return error code
+	"robotInfo"		:		// 机器人的信息
+	{
+		"uuid"					:	"",	// robot id
+		"class_id"				:	0,	// 类别 Nico、Amy
+		"name_id"				:	0,	// 名字ID: 401,402,403
+		"age"					:	0,
+		"gender"				:	0,
+		"intellectual"			:	0,
+		"beautiful"				:	0,
+		"lovely"				:	0,
+		"skin_state"			:	0,
+		"long_phy"				:	0,
+		"short_phy"				:	0,
+		"energy"				:	0,
+		"thirsty"				:	0,
+		"hunger"				:	0,
+		"clean"					:	0,
+		"suface_temperature"	:	0,
+		"money"					:	0,
+		"birthday"				:	0,	// game server registerTime
+		"pw_birthday"			:	0,	// registe pw time
+		"offline_pw_time"		:	0,	// offline pw time
+		"locality"				:	0,	// nico 当前所在区域":> ref HourseArea.xlsx
+		"sleep"					:	0	// nico感受到的睡意,会导致rest or sleep
+	}
+}
+
+// GS2CRobotOnline
+{
+	"result"	:	0
+}
+
+//////////////////////////////////////////////////// GameServer and MTS ////////////////////////////////////////////////////
+// GameServer to MTS
+// GS2MTSGetRobotList
+{
+	"routingID"		: "",
+	"accountID"		: 0,	// 玩家id
+	"playerID"		: 0		// Client sock id in Online Model For forwarding 
+}
+
+// GS2MTSCreateRobot
+{
+	"routingID"			:	"",
+    "accountID"			:	0,	// 玩家id
+	"playerID"			:	0,	// Client sock id in Online Model For forwarding 
+	"robotType"			:	0	// 机器人原型ID
+}
+
+// GS2MTSOnline
+{
+	"robotID"		:	"",	// robot id
+	"offlineTime"	:	0
+}
+
+// GS2MTSOffline
+{
+	"robotID"	:	""	// robot id
+}
+
+// MTS to GameServer
+// MTS2GSGetRobotList
+{
+	"routingID"		:	"",
+	"accountID"		:	0,	// 玩家id
+	"playerID"		:	0,	// Client sock id in Online Model For forwarding 
+	"robotFlag"		:	0,	// 是否已经创建了机器人 0 - no robot, 1 - have robot
+	"robotList"		:		// 如果已经创建了机器人返回所有机器人的信息	 
+	[
+		{
+			"robotID"			:	"",
+			"robotType"			:	0	// 机器人原型ID
+
+		},
+		{
+			"robotID"			:	"",
+			"robotType"			:	0	// 机器人原型ID
+		},
+		// ...
+	]
+}
+
+// MTS2GSCreateRobot
+{
+	"routingID"			:	"",
+	"accountID"			:	0,	// 玩家id
+	"playerID"			:	0,	// Client sock id in Online Model For forwarding
+	"robotFlag"			:	0,
+	"robotID"			:	"", // 是否已经创建了机器人 0 - failed, 1 - success
+	"robotType"			:	0	// 机器人原型ID
+}
